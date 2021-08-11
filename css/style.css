@@ -1,0 +1,282 @@
+#home {
+    background-color: #B5E8C5;
+    font-family: 'Cardo', serif;
+}
+
+#site2 {
+    background-color: #C7FFC9;
+    font-family: 'Cardo', serif;
+}
+
+#site3 {
+    background-color: #C7F6FF;
+    font-family: 'Cardo', serif;
+}
+
+#site4 {
+    background-color: #B5E8E2;
+    font-family: 'Cardo', serif;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*#################### Menubar*/
+
+.menu {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    background: #555;
+    box-shadow: 20px 20px 20px #aaaaaa;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    margin: 20px;
+    width: 225px;
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-flex;
+    text-align: center;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s ease, padding 1s ease, font-size 1s ease, transform 0.5s ease;
+}
+
+.item {
+    padding: 5px;
+}
+
+.item a:hover {
+    background-color: black;
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+
+.menu li {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .item {
+        width: 100%;
+        text-align: center;
+        order: 3;
+        display: block;
+    }
+    .logo {
+        float: initial;
+        justify-content: space-between;
+        display: flex;
+        margin: 30 auto;
+    }
+}
+
+.table {
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    float: initial;
+}
+
+h1 {
+    margin-top: 70px;
+    text-align: center;
+    color: red;
+}
+
+.introduction {
+    /* margin: 0px 100px;
+    margin-bottom: 100px;
+*/
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    float: initial;
+}
+
+/*################ Rezepte */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title title title" "tabelle discripton discripton" " . imgrecepie imgrecepie";
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "title" "tabelle" "discripton" "imgrecepie";
+    }
+}
+
+.titlerezepte {
+    grid-area: title;
+}
+
+.tbrezepte {
+    grid-area: tabelle;
+    margin-top: 0px;
+    border-collapse: collapse;
+}
+
+.td1 {
+    border: 1px solid black;
+    max-width: 20px;
+}
+
+.tr1 {
+    background-color: #D4FFEE;
+}
+
+.tabletop {
+    background-color: lightgray;
+}
+
+.discripton {
+    grid-area: discripton;
+    max-width: 100%;
+    width: auto;
+    margin-top: 40px;
+    padding-top: 3px;
+}
+
+#title2 {
+    text-decoration: underline;
+    grid-area: discripton;
+    max-width: 100%;
+    width: auto;
+    margin-top: 0px;
+    padding-top: 3px;
+}
+
+.imgrecepie1 {
+    grid-area: imgrecepie;
+    height: auto;
+    max-width: 100%;
+}
+
+/*############### Anlässe */
+
+.continerimg1anlass {
+    display: flex;
+    justify-content: center;
+}
+
+.imganlass1 {
+    width: 65%;
+    height: auto;
+}
+
+.tbanlass {
+    border: 1px solid;
+    border-collapse: separate;
+    width: 100%;
+}
+
+.titletbanlass {
+    background-color: #d4ffee;
+    vertical-align: bottom;
+    border: 1px solid;
+    border-collapse: separate;
+    padding-left: 5px;
+}
+
+.datetbanlass {
+    text-align: left;
+    padding-left: 5%;
+}
+
+.infotbanlass {
+    padding-left: 5%;
+    width: 60%;
+}
+
+.buttonanlass {
+    color: black;
+    text-decoration: underline;
+}
+
+.buttonanlass:hover {
+    color: red;
+}
+
+/*################ Formular */
+
+#particulars, #comment, #experience, #theme, input {
+    margin-bottom: 50px;
+}
+
+legend {
+    text-decoration: underline;
+}
+
+input {
+    margin-left: 20px;
+}
+
+/*################ Footer */
+
+footer {
+    background-color: #d4ffee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    footer {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .leftfooter {
+        order: 2;
+    }
+    .tbfooter {
+        order: 1;
+    }
+    footer {
+        flex-direction: column;
+    }
+}

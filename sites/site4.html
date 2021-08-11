@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cardo:400i,700&display=swap">
+	<title> Anmeldung - Kochverein Eschenbach</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="../images/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="../images/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../images/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../images/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="../images/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+	<link rel="manifest" href="images/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body id="site4">
+
+	<nav>
+		<ul class="menu">
+			<li><a href="../index.html"><img class="logo" src="../images/logo.png"
+						alt="Logo vom Küchenverein Eschenbach"></a>
+			</li>
+			<li class="item"><a href="../index.html">Home</a></li>
+			<li class="item"><a href="site2.html">Rezepte</a></li>
+			<li class="item"><a href="site3.html">Anlässe</a></li>
+			<li class="item active"><a href="site4.html">Anmeldung</a></li>
+		</ul>
+	</nav>
+	<h1>Hier für Anlässe anmelden</h1>
+
+	<form action="https://formlog.offline.ch/log" method="POST">
+
+
+
+		<fieldset id="particulars">
+			<legend>Personalien</legend><br>
+
+			<label for="gender">Geschlecht :</label>&emsp;
+			<select id="gender">
+				<option value="male">Männlich</option>
+				<option value="female">Weiblich</option>
+				<option value="other">Andere</option>
+			</select><br><br><br>
+
+			<label for="firstname">Vorname :</label>&emsp;
+			<input type="text" name="firstname" id="firstname" placeholder="Max" required><br>
+
+			<label for="lastname">Nachname :</label>&emsp;
+			<input type="text" name="lastname" id="lastname" placeholder="Mustermann" required><br>
+
+			<label for="email">E-Mail :</label>&emsp;
+			<input type="email" name="email" id="email" placeholder="max@domäne.com" required><br>
+
+			<label for="street">Strasse :</label>&emsp;
+			<input type="text" name="street" id="street" placeholder="Mustermannstrasse 21" required><br>
+
+			<label for="plz">PLZ :</label>&emsp;
+			<input type="number" name="plz" id="plz" placeholder="6205" required><br>
+
+			<label for="place">Ort :</label>&emsp;
+			<input type="text" name="place" id="place" placeholder="Eich" required><br>
+
+			<label for="tele-nr">Telefon :</label>&emsp;
+			<input type="text" name="tele-nr" id="tele-nr" placeholder="079 123 45 67" required>
+		</fieldset>
+
+		<fieldset id="theme">
+			<legend>Anlass</legend><br>
+			<input type="radio" name="theme" id="salad" value="salad"><label for="salad">Wie dekoriere ich einen Salat
+				professionell?</label><br>
+			<input type="radio" name="theme" id="grill" value="grill"><label for="grill">Grillen bei Franz
+				zuhause</label><br>
+			<input type="radio" name="theme" id="healthy" value="healthy"><label for="healthy">Gesundes Kochen im
+				Winter</label><br>
+
+		</fieldset>
+
+		<fieldset id="comment">
+			<legend>Bemerkungen</legend><br>
+			<textarea name="comment" cols="40" rows="5" placeholder="Deine Anmerkungen..."></textarea><br>
+		</fieldset>
+
+		<input type="submit" value="Anmelden für den Anlass">
+	</form>
+
+	<footer>
+
+		<p class="leftfooter">&copy; Küchenverein Eschenbach</p>
+
+		<table class="tbfooter">
+
+			<tr>
+				<td>Küchenverein Eschenbach</td>
+			</tr>
+			<tr>
+				<td>Hauptstrasse 58b</td>
+			</tr>
+			<tr>
+				<td>6274 Eschenbach</td>
+			</tr>
+			<tr>
+				<td>041 900 65 30</td>
+			</tr>
+			<tr>
+				<td>kuechenvereineschenbach@gmail.com</td>
+			</tr>
+		</table>
+
+
+	</footer>
+
+</body>
+
+</html>
